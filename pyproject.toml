@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modpy"
+version = "0.1.0"
+description = "Python DSL for generating game mods."
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "Theobobble" }
+]
+readme = { text = "ModPy: Python DSL and generators for mod project scaffolding.", content-type = "text/markdown" }
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://example.com/modpy"
+
+[tool.setuptools.packages.find]
+include = ["modpy*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
